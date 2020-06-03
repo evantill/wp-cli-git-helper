@@ -4,36 +4,36 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b37aba6560648cee0b47d0be13a0270",
+    "content-hash": "30d7ee012a617e3c4bb83760df9e9eee",
     "packages": [
         {
             "name": "bit3/git-php",
-            "version": "dev-master",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bit3/git-php.git",
-                "reference": "23e0e10eeaf3ae3d0ad05ceb389f14a2dbb3a76e"
+                "reference": "d3b20f37d90886b11f7f9c2c7b8409747462dff1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bit3/git-php/zipball/23e0e10eeaf3ae3d0ad05ceb389f14a2dbb3a76e",
-                "reference": "23e0e10eeaf3ae3d0ad05ceb389f14a2dbb3a76e",
+                "url": "https://api.github.com/repos/bit3/git-php/zipball/d3b20f37d90886b11f7f9c2c7b8409747462dff1",
+                "reference": "d3b20f37d90886b11f7f9c2c7b8409747462dff1",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0",
-                "psr/log": "^1.0",
-                "symfony/process": "^3.4 || ^4.0"
+                "php": ">=5.3",
+                "psr/log": "~1.0",
+                "symfony/process": "~2.3 | ~3.0"
             },
             "require-dev": {
-                "phpcq/all-tasks": "^1.1",
-                "symfony/filesystem": "^3.4 || ^4.0"
+                "phpcq/all-tasks": "~1.1",
+                "symfony/filesystem": "~2.3 | ~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev",
-                    "dev-develop": "1.6.x-dev"
+                    "dev-master": "1.4.x-dev",
+                    "dev-develop": "1.5.x-dev"
                 }
             },
             "autoload": {
@@ -47,7 +47,7 @@
                 "MIT"
             ],
             "description": "Easy to use GIT wrapper for PHP.",
-            "time": "2018-08-27T14:54:59+00:00"
+            "time": "2017-03-09T03:08:46+00:00"
         },
         {
             "name": "psr/log",
@@ -163,9 +163,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "bit3/git-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
