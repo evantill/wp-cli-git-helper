@@ -10,7 +10,9 @@
 	},
 	"license": "MIT",
 	"autoload": {
-		"classmap": ["src/"],
+		"psr-4": {
+			"boonebgorges\\WPCLIGitHelper\\": "src"
+		},
 		"files": ["wp-cli-git-helper.php"]
 	},
 	"authors": [
