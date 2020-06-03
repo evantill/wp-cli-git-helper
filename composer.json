@@ -1,16 +1,18 @@
 {
-	"name": "boonebgorges/wp-cli-git-helper",
+	"name": "evantill/wp-cli-git-helper",
 	"type": "command",
 	"description": "Git helper for wp-cli core, plugin, and theme commands",
 	"keywords": ["wp-cli", "git"],
-	"homepage": "https://github.com/boonebgorges/wp-cli-git-helper",
+	"homepage": "https://github.com/evantill/wp-cli-git-helper",
 	"require": {
 		"php": ">=5.3",
 		"bit3/git-php": "dev-master"
 	},
 	"license": "MIT",
 	"autoload": {
-		"classmap": ["src/"],
+		"psr-4": {
+			"boonebgorges\\WPCLIGitHelper\\": "src"
+		},
 		"files": ["wp-cli-git-helper.php"]
 	},
 	"authors": [
@@ -18,10 +20,15 @@
 			"name": "Boone B Gorges",
 			"email": "boone@gorg.es",
 			"homepage": "http://boone.gorg.es/"
+		},
+		{
+			"name": "Eric Vantillard",
+			"email": "eric.vantillard@evaxion.fr",
+			"homepage": "https://github.com/evantill"
 		}
 	],
 	"support": {
-		"issues": "https://github.com/boonebgorges/wp-cli-git-helper/issues",
-		"source": "https://github.com/boonebgorges/wp-cli-git-helper"
+		"issues": "https://github.com/evantill/wp-cli-git-helper/issues",
+		"source": "https://github.com/evantill/wp-cli-git-helper"
 	}
 }

@@ -1,6 +1,7 @@
 <?php
 
-if ( defined( 'WP_CLI' ) ) {
-	require 'vendor/autoload.php';
-	WP_CLI::add_command( 'gh', '\boonebgorges\WPCLIGitHelper\Command' );
+if ( ! class_exists( 'WP_CLI' ) ) {
+	return;
 }
+
+WP_CLI::add_command( 'gh', '\boonebgorges\WPCLIGitHelper\Command' );
