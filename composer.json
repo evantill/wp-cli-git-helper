@@ -7,7 +7,7 @@
 	"require": {
 		"php": "^5.6 || ^7.0",
 		"bit3/git-php": "dev-master",
-		"symfony/process": "^4.4"
+		"symfony/process": "^3.4"
 	},
 	"license": "MIT",
 	"autoload": {
