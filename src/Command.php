@@ -7,6 +7,60 @@ use \WP_CLI_Command;
 use \WP_CLI;
 
 class Command extends WP_CLI_Command {
+
+	/**
+	 * Wrapper for wp [plugin|theme] [update|install].
+	 *
+	 * ## OPTIONS
+	 *
+	 * [plugin|theme]
+	 * : The conponent to update or install.
+	 *
+	 * [update|install]
+	 * : The required operation to execute.
+	 *
+	 * ## EXAMPLES
+	 *
+	 *     # Installing a plugin.
+	 *     $ wp gh plugin install --version=3.0 jetpack
+	 *     Installing Jetpack by WordPress.com (3.0)
+	 *     Downloading install package from https://downloads.wordpress.org/plugin/jetpack.3.0.zip...
+	 *     Unpacking the package...
+	 *     Installing the plugin...
+	 *     Plugin installed successfully.
+	 *
+	 *     # `wp gh` has written a commit message and created a changeset
+	 *     $ git log -n 1
+	 *     commit 40588985cc6ef1904350932106737be933b141ce
+	 *     Author: Boone B Gorges <boonebgorges@gmail.com>
+	 *     Date:   Tue Dec 16 21:03:46 2014 -0500
+	 *
+	 *         Install plugin: jetpack.
+	 *
+	 *     Name: Jetpack by WordPress.com
+	 *     Version: 3.0
+	 *
+	 *     # Updating a theme
+	 *     $ wp gh theme update make
+	 *     Downloading update from https://downloads.wordpress.org/theme/make.1.4.6.zip...
+	 *     Unpacking the update...
+	 *     Installing the latest version...
+	 *     Removing the old version of the theme...
+	 *     Theme updated successfully.
+	 *     Success: Updated 1/1 themes.
+	 *
+	 *     # `wp gh` has written a commit message and created a changeset
+	 *     $ git log -n 1
+	 *     commit e0327c9bc26fa0e35e1a06d128f998d86c3b81db
+	 *     Author: Boone B Gorges <boonebgorges@gmail.com>
+	 *     Date:   Tue Dec 16 21:09:11 2014 -0500
+	 *
+	 *         Update theme: make.
+	 *
+	 *         Name: Make
+	 *         New version: 1.4.6
+	 *         Previous version: 1.0.0
+	 */
 	public function __invoke( $args, $assoc_args ) {
 		$command = isset( $args[0] ) ? $args[0] : '';
 
