@@ -6,7 +6,8 @@
 	"homepage": "https://github.com/evantill/wp-cli-git-helper",
 	"require": {
 		"php": "^5.6 || ^7.0",
-		"bit3/git-php": "dev-master"
+		"bit3/git-php": "dev-master",
+		"symfony/process": "^4.4"
 	},
 	"license": "MIT",
 	"autoload": {
