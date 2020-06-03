@@ -13,12 +13,25 @@ class Command extends WP_CLI_Command {
 	 *
 	 * ## OPTIONS
 	 *
-	 * [plugin|theme]
-	 * : The conponent to update or install.
+	 * <component_type>
+	 * : Component type to update or install.
+	 * ---
+	 * options:
+	 *  - plugin
+	 *  - theme
+	 * ---
 	 *
-	 * [update|install]
-	 * : The required operation to execute.
-	 *
+	 * <operation>
+	 * : Operation to execute.
+	 * ---
+	 * options:
+	 *  - update
+	 *  - install
+	 * ---
+	 * 
+	 * <name>
+	 * : Component name.
+	 * 
 	 * ## EXAMPLES
 	 *
 	 *     # Installing a plugin.
