@@ -5,8 +5,8 @@
 	"keywords": ["wp-cli", "git"],
 	"homepage": "https://github.com/evantill/wp-cli-git-helper",
 	"require": {
-		"php": "^5.6",
-		"bit3/git-php": "1.4.1"
+		"php": "^7.0",
+		"bit3/git-php": "~1.5"
 	},
 	"license": "MIT",
 	"autoload": {
